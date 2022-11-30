@@ -17,4 +17,32 @@ body{
     #DCDBD3 20%,
     #DCDBD3 100%
   );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contenitore principale della chat */
+.main-container{
+  width: 80%;
+  min-height: 95vh;
+  z-index: 10;
+  background-color: #EAEAEA;
+}
+
+/* Lista contatti (sinistra) */
+.user-wrapper{
+  width: 35%;
+  height: 95vh;
+  float: left;
+  background-color: #fff;
+}
+
+/* Parte chat (destra) */
+.chat-wrapper{
+  width: 65%;
+  height: 95vh;
+  float: left;
+  background-image: url('../img/mine.jpg');
+  background-size: 60%;
 }
