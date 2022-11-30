@@ -7,3 +7,14 @@
 body{
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.background{
+  height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    #009688 0%,
+    #009688 20%,
+    #DCDBD3 20%,
+    #DCDBD3 100%
+  );
+}
