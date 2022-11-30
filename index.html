@@ -46,16 +46,16 @@
             </div>
 
             <!-- Contatti utenti -->
-            <div class="user-contact">
+            <div class="user-contact" v-for="(user,i) in contacts">
               <!-- avatar contatto -->
-              <img src="img/avatar_1.jpg" alt="avatar-1">
+              <img :src="user.avatar" alt="avatar-1">
               <!-- nome e msg contatto -->
               <div class="info-contact">
-                <h5>Michele</h5>
-                <p>Ultimo messaggio inviato</p>
+                <h5>{{user.name}}</h5>
+                <p>{{user.messages[user.messages.length - 1].message}}</p>
               </div>
               <!-- orario ultimo msg -->
-              <span>12:00</span>
+              <span>{{user.messages[user.messages.length - 1].date}}</span>
             </div>
           </div>
         </section>
