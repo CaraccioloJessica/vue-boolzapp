@@ -37,6 +37,7 @@ body{
   height: 95vh;
   float: left;
   background-color: #fff;
+  border-right: 1px solid #D3DBDB;
 }
 
 .personal-section{
@@ -44,13 +45,13 @@ body{
   background-color: #EAEAEA;
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .my-avatar{
   font-size: 0.8rem;
   display: flex;
   align-items: center;
+  flex-grow: 1;
 }
 
 img{
@@ -159,6 +160,40 @@ h5{
   width: 65%;
   height: 95vh;
   float: left;
+}
+
+.user-selected{
+  flex-grow: 1;
+}
+
+.user-selected p{
+  font-size: 0.7rem;
+  color: #547e92;
+}
+
+.chat-section{
+  min-height: calc(100% - 50px - 50px);
   background-image: url('../img/mine.jpg');
-  background-size: 60%;
+  background-size: 50%;
+}
+
+.write-section{
+  height: 50px;
+  background-color: #F3EEEA;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.write-section input{
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  flex-grow: 1;
+}
+
+.write-section i{
+  color: #6B767F;
+  margin: 0 20px;
 }
