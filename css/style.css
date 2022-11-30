@@ -97,6 +97,30 @@ img{
   text-decoration: underline;
 }
 
+/* Ricerca contatti */
+.search-user{
+  height: 35px;
+  padding: 5px;
+  background-color: #FAFAFA;
+  text-align: center;
+  position: relative;
+}
+
+.search-user input{
+  width: 95%;
+  padding: 5px 40px;
+  border: 1px solid #f3f3f3;
+  font-size: 0.6rem;
+}
+
+.search-user i{
+  position: absolute;
+  color: #B1B1B1;
+  font-size: 0.7rem;
+  left: 30px;
+  top: 13px;
+}
+
 /* Parte chat (destra) */
 .chat-wrapper{
   width: 65%;
