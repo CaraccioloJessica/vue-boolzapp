@@ -13,9 +13,9 @@ body{
   background: linear-gradient(
     to bottom,
     #009688 0%,
-    #009688 20%,
-    #DCDBD3 20%,
-    #DCDBD3 100%
+    #009688 18%,
+    #DCDBD3 18%,
+    #D3DBDB 100%
   );
   display: flex;
   justify-content: center;
@@ -82,13 +82,12 @@ img{
   border-radius: 50%;
   color: #8EDAFC;
   background-color: #fff;
+  margin-right: 10px;
   float: left;
 }
 
 .notification span{
   font-size: 0.8rem;
-  margin-left: 10px;
-  float: left;
 }
 
 .notification span:last-of-type{
@@ -100,7 +99,7 @@ img{
 /* Ricerca contatti */
 .search-user{
   height: 35px;
-  padding: 5px;
+  padding: 3px;
   background-color: #FAFAFA;
   text-align: center;
   position: relative;
@@ -108,7 +107,7 @@ img{
 
 .search-user input{
   width: 95%;
-  padding: 5px 40px;
+  padding: 6px 40px;
   border: 1px solid #f3f3f3;
   font-size: 0.6rem;
 }
@@ -119,6 +118,31 @@ img{
   font-size: 0.7rem;
   left: 30px;
   top: 13px;
+}
+
+/* Contatti */
+.user-contact{
+  padding: 10px;
+  border-bottom: 1px solid #f3f3f3;
+  display: flex;
+}
+
+h5{
+  font-weight: normal;
+}
+
+.user-contact span{
+  font-size: 0.6rem;
+  color: #B1B1B1;
+}
+
+.info-contact{
+  flex-grow: 1;
+}
+
+.info-contact p{
+  font-size: 0.7rem;
+  color: #b1b1b1;
 }
 
 /* Parte chat (destra) */
