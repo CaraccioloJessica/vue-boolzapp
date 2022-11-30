@@ -127,6 +127,11 @@ img{
   display: flex;
 }
 
+.contact-wrapper{
+  height: 71.5vh;
+  overflow: auto;
+}
+
 h5{
   font-weight: normal;
 }
