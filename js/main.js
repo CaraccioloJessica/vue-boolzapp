@@ -172,6 +172,19 @@ createApp ({
   methods: {
     userClick(i) {
       this.active = i;
+    },
+
+    addMessage(){
+      this.contacts[this.active].messages.push(
+      {
+        date: '',
+        message: this.newMessage,
+        status: 'sent'
+      });
+      this.newMessage = '';
+  
     }
+
+  
   }
 }).mount('#app')
