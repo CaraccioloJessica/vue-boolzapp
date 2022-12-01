@@ -84,7 +84,7 @@
             <div class="chat-section">
               <div v-for="msg in contacts[active].messages" :class="msg.status === 'sent' ? 'sent' : 'received'">
                 {{msg.message}}
-                <span>{{msg.date.slice(10)}}</span>
+                <span>{{msg.date}}</span>
               </div>
             </div>
 

@@ -174,23 +174,24 @@ createApp ({
       this.active = i;
     },
 
+    
     addMessage(){
       this.contacts[this.active].messages.push(
-      {
-        date: '',
-        message: this.newMessage,
-        status: 'sent'
-      });
-      this.newMessage = '';
-      
-      setTimeout(() => {
-        this.contacts[this.active].messages.push(
-          {
-            date: '',
-            message: 'ok',
-            status: 'received'
-          });
-      }, "1500")
+        {
+          date: '10/04/2020 17:51',
+          message: this.newMessage,
+          status: 'sent'
+        });
+        this.newMessage = '';
+        
+        setTimeout(() => {
+          this.contacts[this.active].messages.push(
+            {
+              date: '10/04/2020 18:51',
+              message: 'ok',
+              status: 'received'
+            });
+          }, "1500")
     }  
   }
 }).mount('#app')
