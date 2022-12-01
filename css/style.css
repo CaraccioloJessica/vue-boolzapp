@@ -171,12 +171,45 @@ h5{
   color: #547e92;
 }
 
+/* Sezione con messaggi inviati e ricevuti */
 .chat-section{
   min-height: calc(100% - 50px - 50px);
   background-image: url('../img/mine.jpg');
   background-size: 50%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
 }
 
+.sent, .received{
+  width: 230px;
+  min-height: 40px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  padding: 8px;
+  position: relative;
+}
+
+.sent{
+  background-color: #D5F9BA;
+  align-self: flex-end;
+}
+
+.received{
+  background-color: #fff;
+  align-self: flex-start;
+}
+
+.chat-section span{
+  color: #B1B1B1;
+  font-size: 0.6rem;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+
+/* Barra per scrivere messaggi */
 .write-section{
   height: 50px;
   background-color: #F3EEEA;
