@@ -47,7 +47,7 @@
 
             <!-- Contatti utenti -->
             <div class="contact-wrapper">
-              <div class="user-contact" v-for="(user,i) in contacts">
+              <div class="user-contact" v-for="(user,i) in contacts" @click="userClick(i)">
                 <!-- avatar contatto -->
                 <img :src="user.avatar" alt="avatar-1">
                 <!-- nome e msg contatto -->
@@ -67,10 +67,10 @@
           <div class="chat-wrapper">
             <div class="personal-section">
               <!-- Avatar con nome contatto selezionato-->
-                <img src="img/avatar_1.jpg" alt="mio-avatar">
+                <img :src="contacts[active].avatar" alt="avatar">
                 <div class="user-selected">
-                  <h5>Michele</h5>
-                  <p>Ultimo accesso oggi alle 12:00</p>
+                  <h5>{{contacts[active].name}}</h5>
+                  <p>Ultimo accesso alle 12:00</p>
                 </div>
 
               <!-- Impostazioni-->
@@ -82,14 +82,9 @@
             </div>
 
             <div class="chat-section">
-              <div class="sent">
-                Prova
-                <span>12:00</span>
-              </div>
-
-              <div class="received">
-                Prova
-                <span>12:00</span>
+              <div v-for="msg in contacts[active].messages" :class="msg.status === 'sent' ? 'sent' : 'received'">
+                {{msg.message}}
+                <span>{{msg.date.slice(10)}}</span>
               </div>
             </div>
 
