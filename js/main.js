@@ -173,8 +173,7 @@ createApp ({
     userClick(i) {
       this.active = i;
     },
-
-    
+   
     addMessage(){
       this.contacts[this.active].messages.push(
         {
@@ -192,6 +191,10 @@ createApp ({
               status: 'received'
             });
           }, "1500")
-    }  
+    },
+    
+    cercaNome(){
+      
+    }
   }
 }).mount('#app')

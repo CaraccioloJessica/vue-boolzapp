@@ -41,13 +41,13 @@
 
             <!-- Barra di ricerca contatti -->
             <div class="search-user">
-              <input type="text" placeholder="Cerca o inizia una nuova chat" name="cerca-utente" id="cerca-utente">
+              <input type="text" placeholder="Cerca o inizia una nuova chat" v-model="cercaUtente">
               <i class="fa-solid fa-magnifying-glass"></i>
             </div>
 
             <!-- Contatti utenti -->
             <div class="contact-wrapper">
-              <div class="user-contact" v-for="(user,i) in contacts" @click="userClick(i)">
+              <div class="user-contact" v-for="(user,i) in contacts" @click="userClick(i)" :class="{ 'select': active === i}">
                 <!-- avatar contatto -->
                 <img :src="user.avatar" alt="avatar-1">
                 <!-- nome e msg contatto -->
