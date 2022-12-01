@@ -182,9 +182,15 @@ createApp ({
         status: 'sent'
       });
       this.newMessage = '';
-  
-    }
-
-  
+      
+      setTimeout(() => {
+        this.contacts[this.active].messages.push(
+          {
+            date: '',
+            message: 'ok',
+            status: 'received'
+          });
+      }, "1500")
+    }  
   }
 }).mount('#app')
