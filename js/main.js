@@ -2,6 +2,7 @@ const { createApp } = Vue;
 createApp ({
   data (){
     return {
+      cercaUtente: '',
       active: 0,
       contacts: [
         {
@@ -192,9 +193,18 @@ createApp ({
             });
           }, "1500")
     },
-    
+  },
+
+  computed: {
     cercaNome(){
-      
+      if(this.cercaUtente) {
+        return this.contacts.filter((user) => {
+          return user.name.toLowerCase().includes(this.cercaUtente)
+        })
+        }
+        else {
+          return this.contacts;
+        }
+      }
     }
-  }
 }).mount('#app')

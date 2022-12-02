@@ -190,6 +190,7 @@ h5{
   font-size: 0.8rem;
   padding: 8px;
   position: relative;
+  word-break: break-word;
 }
 
 .sent{
