@@ -47,7 +47,7 @@
 
             <!-- Contatti utenti -->
             <div class="contact-wrapper">
-              <div class="user-contact" v-for="(user,i) in cercaNome" :class="{ 'select': active === i}" @click="userClick(i)">
+              <div class="user-contact" v-for="(user,i) in cercaNome" @click="userClick(i)" :class="{ 'select': active === i}">
                 <!-- avatar contatto -->
                 <img :src="user.avatar" alt="avatar-1">
                 <!-- nome e msg contatto -->
@@ -67,9 +67,9 @@
           <div class="chat-wrapper">
             <div class="personal-section">
               <!-- Avatar con nome contatto selezionato-->
-                <img :src="contacts[active].avatar" alt="avatar">
+                <img :src="cercaNome[active].avatar" alt="avatar">
                 <div class="user-selected">
-                  <h5>{{contacts[active].name}}</h5>
+                  <h5>{{cercaNome[active].name}}</h5>
                   <p>Ultimo accesso alle 12:00</p>
                 </div>
 

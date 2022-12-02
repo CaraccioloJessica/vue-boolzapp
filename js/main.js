@@ -200,7 +200,7 @@ createApp ({
       if(this.cercaUtente) {
         return this.contacts.filter((user) => {
           return user.name.toLowerCase().includes(this.cercaUtente)
-        })
+        });
         }
         else {
           return this.contacts;
